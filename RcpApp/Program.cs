@@ -21,7 +21,7 @@ namespace RcpApp
             
                 var workDays = await ReadCsv(files);
             
-                Console.WriteLine("All files readed.");
+                Console.WriteLine("All files read.");
                 Console.WriteLine("RCPs:");
                 workDays.ForEach(w => Console.WriteLine($"{w.KodPracownika}, {w.Data.Value.ToString("dd/MM/yyyy")}, {w.GodzinaWejscia}, {w.GodzinaWyjscia}"));
                 Console.WriteLine("Press any key to exit.");
